@@ -1,9 +1,12 @@
-import React from 'react'
+import styles from "../styles/SimpleAppointmentCard.module.css";
 
-function SimpleAppointmentCard() {
+function SimpleAppointmentCard({ title, time }) {
   return (
-    <div>SimpleAppointmentCard</div>
-  )
+    <div className={styles.card}>
+      <h4>{title}</h4>
+      <p>{time}</p>
+    </div>
+  );
 }
 
-export default SimpleAppointmentCard
+export default SimpleAppointmentCard;
